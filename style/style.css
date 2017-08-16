@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 75px;
+    color: blue;
+    background-color: greenyellow;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.cell{
+    display: f;
+    border: 1px black solid;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 145px;
+}
