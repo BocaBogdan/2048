@@ -7,14 +7,15 @@ const userView = {
         });
     },
     printGameMatrix(){
-        console.log('print game matrix');
         const main = document.createElement('main');
         for(let j =0;j<4;j++){
             const row = document.createElement('div');
             for(let i=0;i<4;i++){
                 const cell = document.createElement('div');
                 cell.classList.add('cell');
-                cell.innerText = game.matrix[i][j];
+                if(game.matrix[i][j] !==0) {
+                    cell.innerText = game.matrix[i][j];
+                }
                 row.appendChild(cell);
             }
             main.appendChild(row);
